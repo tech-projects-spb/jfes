@@ -1,0 +1,22 @@
+{
+    "name": "Atlas-M",
+    "serial_number": 12345,
+	"components": {
+        "motor" :[
+            { "type": "propulsion", "function": "propulsion", "interface": "rs232"},
+			{ "type": "linear acruator", "function": "rudder", "interface": "analog"}
+        ],
+        "battery": [
+			{ "type": "li_ion", "function": "main", "interface": "can"},
+			{ "type": "li_ion", "function": "motor", "interface": "rs232"},
+			{ "type": "li_ion", "function": "backup", "interface": "None"}
+		],
+		"gps" : [
+			{ "type": "n8m", "function": "gps", "interface": "spi"}
+		],
+		"imu" : [
+			{ "type": "bmx160", "function": "imu", "interface": "i2c"}
+		]
+    }
+}
+
